@@ -6,7 +6,7 @@ from pymongo.errors import PyMongoError
 import json
 
 import pymongo.errors
-from lib_oriv_tools.agents.datasheets.pinout.package.package_lookup_table import (
+from package_lookup_table import (
     PACKAGE_LOOKUP_TABLE,
 )
 
@@ -16,8 +16,7 @@ data = PACKAGE_LOOKUP_TABLE
 
 
 # --- 2. MongoDB Configuration ---
-# Change these values to match your MongoDB setup.
-MONGO_URI = "mongodb+srv://mayankgoel0086:BjIDGYehEiL205Sj@knowledge.vhvvkwf.mongodb.net/?retryWrites=true&w=majority&appName=knowledge"
+MONGO_URI = "mongodb://localhost:27017/"
 DATABASE_NAME = "electronics_db"
 COLLECTION_NAME = "component_packages"
 
